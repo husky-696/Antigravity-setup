@@ -104,6 +104,18 @@ It should list everything you just installed.
 
 ---
 
+## 🤖 Automatic Installation (For Antigravity Agents)
+
+If you are using an Antigravity Agent, paste this prompt into the chat to have it install the global layers for you:
+
+> "Act as a systems engineer. I want to install this Antigravity-setup configuration onto my local IDE. Please:
+> 1. Sync `global/GEMINI.md` to `~/.gemini/GEMINI.md`
+> 2. Install all skills in `global/skills/` to `~/.gemini/antigravity/skills/`
+> 3. Install all global workflows in `workspace/workflows/` to `~/.gemini/antigravity/global_workflows/`
+> 4. Verify the installation and give me a summary of my new capabilities."
+
+---
+
 ## 🧠 Core Concepts
 
 | Concept      | Scope     | Location                            | Activation    |
