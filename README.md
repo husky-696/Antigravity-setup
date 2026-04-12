@@ -17,6 +17,14 @@ This repo is a **drop-in library** that solves all of that. Copy what you need, 
 
 ---
 
+## 🤖 AI-Native Setup (Easiest)
+
+If you are already inside Antigravity IDE, simply paste this prompt to your agent:
+
+> **Prompt:** "I want to set up my Antigravity IDE global rules, skills, and workflows. Please clone the Antigravity-setup repo, then install the global `GEMINI.md` to `~/.gemini/GEMINI.md`, copy all skills to `~/.gemini/antigravity/skills/`, and copy all workflows from `workspace/workflows/` to `~/.gemini/antigravity/global_workflows/`. Verify the installation when done."
+
+---
+
 ## 📂 Repository Structure
 
 ```text
@@ -101,18 +109,6 @@ Open Antigravity IDE in your project. Ask the agent:
 > "What rules and skills do you have access to?"
 
 It should list everything you just installed.
-
----
-
-## 🤖 Automatic Installation (For Antigravity Agents)
-
-If you are using an Antigravity Agent, paste this prompt into the chat to have it install the global layers for you:
-
-> "Act as a systems engineer. I want to install this Antigravity-setup configuration onto my local IDE. Please:
-> 1. Sync `global/GEMINI.md` to `~/.gemini/GEMINI.md`
-> 2. Install all skills in `global/skills/` to `~/.gemini/antigravity/skills/`
-> 3. Install all global workflows in `workspace/workflows/` to `~/.gemini/antigravity/global_workflows/`
-> 4. Verify the installation and give me a summary of my new capabilities."
 
 ---
 

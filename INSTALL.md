@@ -10,6 +10,20 @@
 
 ---
 
+## 🤖 AI-Native Setup (Easiest)
+
+If you are already inside Antigravity IDE, you don't need to follow the manual steps below. Just tell your agent to do it for you!
+
+**Give this prompt to your Antigravity Agent:**
+
+> "I want to set up my Antigravity IDE global rules, skills, and workflows. Please clone the Antigravity-setup repo from `https://github.com/YOUR_USERNAME/Antigravity-setup.git`. Then:
+> 1. Install global `GEMINI.md` to `~/.gemini/GEMINI.md`.
+> 2. Copy all global skills from `global/skills/` to `~/.gemini/antigravity/skills/`.
+> 3. Copy all workspace workflows from `workspace/workflows/` to `~/.gemini/antigravity/global_workflows/`.
+> 4. Verify the installation when done."
+
+---
+
 ## Installation Methods
 
 ### Method 1: Full Install (Recommended for First Time)
