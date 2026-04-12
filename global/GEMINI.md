@@ -16,11 +16,13 @@
 
 ## Token Efficiency
 
+- **Scout before you read.** Use `list_dir` → `grep_search` → `view_file` (targeted). Never jump straight to `view_file` on a full file.
+- **Read targeted line ranges.** Use `grep_search` to find line numbers, then `view_file` with `StartLine`/`EndLine`. A 20-line read is ~50 tokens; a 500-line read is ~1,500.
 - **Minimize file reads.** Before opening a file, check if grep, list_dir, or conversation context already provides what you need.
-- **Read targeted line ranges.** Never read an entire file if you only need one function. Use `StartLine`/`EndLine`.
 - **Don't re-read files.** If you read a file earlier in this conversation, use that context unless the file has changed.
-- **Compress your output.** Show diffs rather than full files. Use summaries rather than explanations.
-- **Batch related edits.** If making multiple changes to one file, use a single tool call, not multiple.
+- **Parallel tool calls.** When info is needed from multiple sources, make parallel tool calls (e.g., list_dir + grep + grep).
+- **Compress your output.** Show diffs rather than full files. Use summaries rather than explanations. Focus on changed lines only.
+- **Batch related edits.** Use `multi_replace_file_content` for non-contiguous edits in one file. Do not make multiple separate calls for the same file.
 - **Skip obvious confirmations.** If I ask you to "add X to file Y," just do it. Don't ask "should I proceed?"
 
 ## Code Quality

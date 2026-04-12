@@ -42,8 +42,6 @@ Antigravity-setup/
 │       │   └── SKILL.md
 │       ├── git-commit/
 │       │   └── SKILL.md
-│       └── token-optimizer/
-│           └── SKILL.md
 │
 ├── workspace/                         # ── Workspace config (per-project) ──
 │   ├── rules/                         # Workspace rules (.agent/rules/)
