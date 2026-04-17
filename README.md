@@ -55,7 +55,6 @@ Antigravity-setup/
 │   ├── rules/                         # Project rules (.agent/rules/)
 │   │   ├── code-quality.md
 │   │   ├── safety-guardrails.md
-│   │   ├── token-efficiency.md
 │   │   └── progress-reporting.md      # Anti-stuck & status rules
 │   └── workflows/                     # Project workflows (.agent/workflows/)
 │       ├── build-feature.md

@@ -25,7 +25,6 @@ cp /path/to/Antigravity-setup/examples/workspace/workflows/* .agent/workflows/
 |:-----|:--------|
 | `code-quality.md` | Code style, naming, and structure conventions |
 | `safety-guardrails.md` | Protected files, destructive action prevention |
-| `token-efficiency.md` | Minimize token waste, output compression |
 | `progress-reporting.md` | Status updates, forward momentum, anti-stuck |
 
 ### Workflows (`.agent/workflows/`)
