@@ -9,7 +9,7 @@ Run our automatic installer from your terminal. It detects your environment, pre
 ```bash
 git clone https://github.com/YOUR_USERNAME/Antigravity-setup.git
 cd Antigravity-setup
-./setup.sh
+./setup.sh --fetch-awesome
 ```
 
 ### Install Workspace Examples
@@ -62,4 +62,5 @@ cp "$SETUP_DIR/stacks/typescript-node/rules.md" .agent/rules/stack.md
 After installation, open Antigravity IDE and ask:
 
 1. **"What global rules do you have?"** — Should describe your GEMINI.md contents.
-2. **"What skills are available?"** — Should list all installed skills by name.
+2. **"What skills are available?"** — Should list all installed skills by name (including the new curated set).
+3. **"Try using @brainstorming"** — Test one of the newly installed skills.

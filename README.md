@@ -24,8 +24,12 @@ We provide a one-command installer that auto-detects `bun` vs `npm` and configur
 ```bash
 git clone https://github.com/YOUR_USERNAME/Antigravity-setup.git
 cd Antigravity-setup
-./setup.sh
+./setup.sh --fetch-awesome
 ```
+
+**Want to keep your skills up to date with the community?**
+We integrate directly with [Antigravity Awesome Skills](https://github.com/sickn33/antigravity-awesome-skills) to provide **1,400+ curated playbooks**.
+Check out the [📚 CATALOG.md](./CATALOG.md) for a full searchable list of available skills.
 
 **Want project-specific examples too?**
 ```bash

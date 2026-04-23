@@ -50,6 +50,20 @@ ok "Global rules → ${D}~/.gemini/GEMINI.md${N}"
 # ── Global Skills ────────────────────────────────────────────────────────────
 step "Installing global skills"
 
+# Check if user wants to fetch latest from awesome-skills
+FETCH_AWESOME=false
+for arg in "$@"; do
+    if [ "$arg" = "--fetch-awesome" ]; then
+        FETCH_AWESOME=true
+    fi
+done
+
+if [ "$FETCH_AWESOME" = true ]; then
+    info "Fetching curated skills for your tech stack..."
+    npx -y antigravity-awesome-skills --path "$DIR/global/skills" --tags supabase,firebase,expo,vercel,nextjs,react,bun,ai,agent,mcp,database,mobile,frontend,backend,cloud,infrastructure,devops,security,testing,development,essentials
+    ok "Curated library updated"
+fi
+
 mkdir -p "$SKILLS"
 COUNT=0
 for d in "$DIR/global/skills"/*/; do
@@ -59,13 +73,23 @@ for d in "$DIR/global/skills"/*/; do
     ok "Skill: ${B}$name${N}"
     COUNT=$((COUNT + 1))
 done
-info "${COUNT} skills installed"
+info "${COUNT} skills installed to ${D}${SKILLS}${N}"
 
 # ── Workspace Examples (Optional) ────────────────────────────────────────────
 step "Workspace examples"
 
-if [ "${1:-}" = "--with-workspace" ]; then
-    TARGET="${2:-.}"
+if [[ "$*" == *"--with-workspace"* ]]; then
+    # Extract target path if provided after --with-workspace
+    TARGET="."
+    args=("$@")
+    for i in "${!args[@]}"; do
+        if [ "${args[$i]}" = "--with-workspace" ]; then
+            if [ -n "${args[$((i+1))]:-}" ] && [[ ! "${args[$((i+1))]}" == --* ]]; then
+                TARGET="${args[$((i+1))]}"
+            fi
+        fi
+    done
+    
     TARGET="$(cd "$TARGET" && pwd)"
     mkdir -p "$TARGET/.agent/rules" "$TARGET/.agent/workflows"
 
@@ -86,11 +110,14 @@ echo ""
 echo -e "${B}${G}  ✅ Setup complete!${N}"
 echo ""
 echo -e "  ${B}Installed:${N}"
-echo -e "    ${G}•${N} Global rules   → ${D}~/.gemini/GEMINI.md${N}"
-echo -e "    ${G}•${N} ${COUNT} skills       → ${D}~/.gemini/antigravity/skills/${N}"
+echo -e "    ${G}•${N} Global rules      → ${D}~/.gemini/GEMINI.md${N}"
+echo -e "    ${G}•${N} ${COUNT} skills          → ${D}~/.gemini/antigravity/skills/${N}"
 echo ""
 echo -e "  ${B}Next:${N} Open Antigravity IDE and ask ${D}\"What rules and skills do you have?\"${N}"
 echo ""
-[ -z "${1:-}" ] && echo -e "  ${B}Per-project setup:${N} ${D}./setup.sh --with-workspace /path/to/project${N}" && echo ""
+echo -e "  ${B}Useful Commands:${N}"
+echo -e "    ${D}./setup.sh --fetch-awesome${N}          Update library from GitHub"
+echo -e "    ${D}./setup.sh --with-workspace [path]${N}  Install project templates"
+echo ""
 echo -e "  ${B}Stack rules:${N} ${D}cp stacks/<your-stack>/rules.md /project/.agent/rules/stack.md${N}"
 echo ""
