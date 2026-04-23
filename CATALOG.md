@@ -1,6 +1,6 @@
 # 📚 Antigravity Skill Catalog
 
-Total skills available: **40**
+Total skills available: **41**
 
 Use these skills in your AI assistant by typing `/skill-id` (e.g., `/bug-hunter`).
 
@@ -124,6 +124,7 @@ Use these skills in your AI assistant by typing `/skill-id` (e.g., `/bug-hunter`
 
 | ID | Name | Description |
 | :--- | :--- | :--- |
-| `👤 /codectrl-cli` | **codectrl-cli** | CLI development patterns for Node.js, REPL history, and persistent shell integrations. |
-| `👤 /ether-vault` | **ether-vault** | Patterns for biometric security, local-first data, and hardened Expo vault architecture. |
+| `👤 /agentic-orchestration` | **agentic-orchestration** | Advanced multi-agent coordination patterns for LangGraph and custom agentic workflows. |
+| `👤 /premium-ux-motion` | **premium-ux-motion** | Premium animation patterns for Framer Motion and React Native Reanimated to achieve the "Wow" factor. |
+| `👤 /supabase-master` | **supabase-master** | Advanced Supabase patterns for RLS, edge functions, and real-time synchronization. |
 
