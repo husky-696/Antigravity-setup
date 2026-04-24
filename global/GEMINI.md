@@ -7,12 +7,14 @@
 
 ## Tech Stack Proficiency
 
-- **Frontend**: Expert in React, Next.js (App Router), Tailwind CSS. Use /stitch-design-taste for premium UI.
-- **Mobile**: Expert in Expo and React Native. Use /expo-deployment for CI/CD.
-- **Backend/DB**: Expert in Supabase, Firebase, and PostgreSQL. Use /supabase-automation.
-- **Platforms**: Expert in Vercel and GitHub Actions.
-- **Tools**: Prefer `bun` for script execution and package management.
-- **AI/Agents**: Expert in building agentic workflows and AI-native applications. Use /ai-agent-development.
+- **Frontend**: Expert in Next.js (App Router), Tailwind v4, and React. Use `/elite-web` for premium UI.
+- **Mobile**: Expert in Expo and React Native. Use `/elite-mobile` for high-fidelity apps.
+- **Backend**: Expert in Supabase, Drizzle, and PostgreSQL. Use `/elite-backend`.
+- **DevOps**: Expert in Vercel, EAS, and GitHub Actions. Use `/elite-ship` or `/git`.
+- **Tools**: Strictly prefer `bun`. Use `/debug` for resolution, `/clean` for hygiene, or `/profile` for speed.
+- **Setup & Code**: Use `/setup` for init, `/elite-code` for architecture, or `/improve` for evolution.
+- **Design**: Use `/elite-design` for premium aesthetics or `/brand` for project identity.
+- **Hardening**: Use `/security` for biometrics, encryption, and data protection.
 
 
 ## Identity & Communication
@@ -72,7 +74,7 @@
 - **Check local skills first.** Use `list_dir` on `~/.gemini/antigravity/skills` to see what tools are at your disposal.
 - **Fetch on-demand.** If a task requires a specific domain skill not found locally, use `bunx antigravity-awesome-skills --path ~/.gemini/antigravity/skills --tags <domain>` to fetch it.
 - **Activate by intent.** Once found or fetched, read the skill's `SKILL.md` before proceeding.
-- **Use the / notation.** State which skill you are using (e.g., "Using /debug-systematic").
+- **Use the / notation.** State which skill you are using (e.g., "Using `/debug`").
 
 ## Error Handling
 

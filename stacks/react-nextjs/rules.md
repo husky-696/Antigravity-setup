@@ -36,6 +36,15 @@
 - **Utility/hook files:** `kebab-case.ts`
 - **Test files:** `ComponentName.test.tsx`
 
+## Elite Design & Creativity
+
+- **Aesthetics First**: Every component must look premium. Use sophisticated palettes, glassmorphism, and high-end typography.
+- **Micro-interactions**: Add subtle Framer Motion animations to interactions (hover, click, entry). Use spring physics (`type: "spring", stiffness: 300, damping: 30`).
+- **Surfaces**: Use `backdrop-blur-md` and semi-transparent borders for a glass look. Example: `bg-white/5 border border-white/10`.
+- **Typography**: Strictly use Inter, Geist, or Outfit. Use `text-balance` for headings.
+- **Layout**: Use consistent spacing (multiples of 4px). Avoid cluttered layouts; use whitespace as a luxury.
+- **Dark Mode**: Default to a high-contrast dark theme (`bg-zinc-950`). Use subtle glows for depth.
+
 ## Styling
 
 - Follow the project's existing pattern (CSS Modules, Tailwind, styled-components, etc.)
