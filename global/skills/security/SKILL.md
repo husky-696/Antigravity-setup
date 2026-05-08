@@ -1,5 +1,5 @@
 ---
-name: 🔐 security
+name: 🛡️ security
 description: High-end protection including biometrics, encryption, and secure architecture.
 category: core
 ---

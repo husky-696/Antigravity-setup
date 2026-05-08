@@ -1,5 +1,5 @@
 ---
-name: ⚡ profile
+name: 📈 profile
 description: Performance auditing and extreme optimization for speed and bundle size.
 category: core
 ---

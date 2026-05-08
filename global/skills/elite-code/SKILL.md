@@ -1,5 +1,5 @@
 ---
-name: 💎 elite-code
+name: 🧩 elite-code
 description: Advanced refactoring, pattern enforcement, and high-performance coding standards.
 category: core
 ---

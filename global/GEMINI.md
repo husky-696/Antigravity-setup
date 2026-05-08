@@ -12,8 +12,8 @@
 - **Backend**: Expert in Supabase, Drizzle, and PostgreSQL. Use `/elite-backend`.
 - **DevOps**: Expert in Vercel, EAS, and GitHub Actions. Use `/elite-ship` or `/git`.
 - **Tools**: Strictly prefer `bun`. Use `/debug` for resolution, `/clean` for hygiene, or `/profile` for speed.
-- **Setup & Code**: Use `/setup` for init, `/elite-code` for architecture, or `/improve` for evolution.
-- **Design**: Use `/elite-design` for premium aesthetics or `/brand` for project identity.
+- **Setup & Code**: Use `/setup` for init, `/agent-boost` for workflow upgrades, `/elite-code` for architecture, or `/improve` for evolution.
+- **Design**: Use `/elite-design` for premium aesthetics, `/brand` for project identity, or `/themes` for tokens, icon systems, and visual polish.
 - **Hardening**: Use `/security` for biometrics, encryption, and data protection.
 
 

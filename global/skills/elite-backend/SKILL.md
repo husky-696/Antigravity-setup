@@ -1,5 +1,5 @@
 ---
-name: ⚡ elite-backend
+name: 🗄️ elite-backend
 description: Scalable backend architecture with Supabase, Auth, and type-safe database layers.
 category: backend
 ---

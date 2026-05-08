@@ -1,5 +1,5 @@
 ---
-name: 🎨 elite-design
+name: 💅 elite-design
 description: Premium UI/UX design rules, color palettes, and motion patterns for the "Wow" factor.
 category: design
 ---

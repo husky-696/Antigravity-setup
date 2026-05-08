@@ -4,7 +4,7 @@
 
 ## ⚡ Super Easy Install (Recommended)
 
-Run our automatic installer from your terminal. It detects your environment, prefers `bun` for speed, and installs global skills.
+Run our automatic installer from your terminal. It detects your environment, prefers `bun` for speed, and installs global rules, skills, slash workflows, stack rules, and optional premium theme and icon guidance.
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/Antigravity-setup.git
@@ -13,10 +13,23 @@ cd Antigravity-setup
 ```
 
 ### Install Workspace Examples
-If you want to copy the template workspace rules to a specific project:
+If you want to copy the template workspace rules and slash-command workflows to a specific project:
 
 ```bash
 ./setup.sh --with-workspace /path/to/your/project
+```
+
+### Full Workspace Upgrade
+For the smoother setup path, install workflows, premium theme rules, and auto-detected stack rules together:
+
+```bash
+./setup.sh --all /path/to/your/project
+```
+
+You can also choose pieces explicitly:
+
+```bash
+./setup.sh --with-workspace /path/to/your/project --with-stack react-nextjs --with-themes
 ```
 
 ---
@@ -63,4 +76,5 @@ After installation, open Antigravity IDE and ask:
 
 1. **"What global rules do you have?"** — Should describe your GEMINI.md contents.
 2. **"What skills are available?"** — Should list all installed skills by name (including the new curated set).
-3. **"Try using @brainstorming"** — Test one of the newly installed skills.
+3. **"Use /agent-boost to audit this workspace"** — Confirms workflow/capability guidance is available.
+4. **"Use /theme to make this UI feel premium with better icons"** — Confirms theme workflow guidance is available.

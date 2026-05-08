@@ -1,5 +1,5 @@
 ---
-name: 🚀 elite-web
+name: 🕸️ elite-web
 description: High-performance Next.js & Tailwind stack with premium design rules and motion.
 category: frontend
 ---
