@@ -26,7 +26,7 @@ cd Antigravity-setup
 ./setup.sh
 ```
 
-Auto-detects `bun` vs `npm`. Configures global IDE rules and skills in one shot.
+Auto-detects `bun` vs `npm`. Configures global IDE rules, skills, slash-command workflows, stack rules, and optional premium theme guidance in one shot.
 
 **Pull 1,400+ community playbooks from [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills):**
 
@@ -34,10 +34,18 @@ Auto-detects `bun` vs `npm`. Configures global IDE rules and skills in one shot.
 ./setup.sh --fetch-awesome
 ```
 
-**Apply project-specific workspace templates:**
+**Apply project-specific workspace templates and slash commands:**
 
 ```bash
 ./setup.sh --with-workspace /path/to/your/project
+```
+
+**Upgrade a project with workflows, premium themes, and stack-aware rules:**
+
+```bash
+./setup.sh --all /path/to/your/project
+# or be explicit
+./setup.sh --with-workspace /path/to/your/project --with-stack react-nextjs --with-themes
 ```
 
 ---
@@ -55,6 +63,7 @@ Antigravity-setup/
 ├── global/                          # Applies to ALL projects
 │   ├── GEMINI.md                    # Global rules → ~/.gemini/GEMINI.md
 │   └── skills/                      # Global skills → ~/.gemini/antigravity/skills/
+│       ├── agent-boost/
 │       ├── brand/
 │       ├── clean/
 │       ├── debug/
@@ -68,7 +77,8 @@ Antigravity-setup/
 │       ├── improve/
 │       ├── profile/
 │       ├── security/
-│       └── setup/
+│       ├── setup/
+│       └── themes/
 │
 ├── examples/workspace/              # Per-project templates
 │   ├── rules/                       # Drop into .agent/rules/
@@ -76,10 +86,12 @@ Antigravity-setup/
 │   │   ├── safety-guardrails.md
 │   │   └── progress-reporting.md
 │   └── workflows/                   # Drop into .agent/workflows/
+│       ├── agent-boost.md
 │       ├── build-feature.md
 │       ├── fix-bug.md
 │       ├── refactor.md
-│       └── setup-project.md
+│       ├── setup-project.md
+│       └── theme.md
 │
 └── stacks/                          # Stack-specific rule packs
     ├── typescript-node/
@@ -99,6 +111,8 @@ Antigravity-setup/
 | Hallucination guard | File-existence checks before edits; package validation before installs |
 | Core file protection | Blocklist for `package.json`, lock files, CI config unless explicitly unlocked |
 | Package manager | `bun` preferred; fallback to `npm` if `bun` not found |
+| Slash workflows | Project-local `.agent/workflows` for `/build-feature`, `/fix-bug`, `/theme`, `/agent-boost`, and more |
+| Visual polish | Optional premium theme rule pack with semantic tokens, contrast, depth, and motion guidance |
 
 ---
 
@@ -111,12 +125,14 @@ Antigravity-setup/
 | `⚡ /elite-backend` | Supabase, Drizzle ORM, Auth, RLS modeling | Backend |
 | `🎨 /elite-design` | Typography, motion, premium UI/UX patterns | Design |
 | `🎨 /brand` | Logos, palettes, marketing copy | Design |
+| `🎭 /themes` | Premium theme systems, dark/light modes, visual polish | Design |
 | `🚢 /elite-ship` | Vercel, EAS Build, repo hygiene | DevOps |
 | `🌿 /git` | Conventional Commits, branch sync | DevOps |
 | `🧹 /clean` | Project auditing, dead-code pruning | Utility |
 | `🔍 /debug` | Isolate → Trace → Analyze protocol | Quality |
 | `⚙️ /setup` | Workspace init, environment config | Core |
 | `💎 /elite-code` | Refactoring, high-performance patterns | Core |
+| `🧠 /agent-boost` | Improve rules, workflows, validation loops, and slash commands | Core |
 | `✨ /improve` | Systematic design + functionality evolution | Core |
 | `⚡ /profile` | Performance auditing, speed optimization | Quality |
 | `🔐 /security` | Biometrics, encryption, RLS hardening | Quality |
@@ -147,6 +163,22 @@ Full descriptions → [CATALOG.md](./CATALOG.md)
 ```
 /setup         → audit environment, init workspace
 /elite-web or /elite-mobile → begin building
+```
+
+### Make the UI feel premium
+
+```
+/theme         → apply a named visual direction
+/themes        → generate tokens, dark/light modes, and polish rules
+/elite-design  → review typography, spacing, and motion
+```
+
+### Improve agent workflow
+
+```
+/agent-boost   → audit rules, workflows, checks, and slash commands
+/clean         → prune stale structure and dead code
+/profile       → tighten performance bottlenecks
 ```
 
 ---
