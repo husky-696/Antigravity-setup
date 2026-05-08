@@ -1,5 +1,5 @@
 ---
-name: ⚙️ setup
+name: 🧭 setup
 description: Instant project initialization and workspace configuration.
 category: core
 ---
@@ -10,7 +10,7 @@ Use `/setup` to instantly configure a new workspace or project for elite develop
 
 ## Setup Workflow
 1. **Analyze Environment**: Detect stack (Next.js, Expo, Supabase, etc.).
-2. **Apply Rules**: Copy core `.agent/rules` for code quality, safety, progress, and optional premium themes.
+2. **Apply Rules**: Copy core `.agent/rules` for code quality, safety, progress, and optional premium themes and icon polish.
 3. **Install Workflows**: Add slash workflows such as `/build-feature`, `/fix-bug`, `/theme`, and `/agent-boost`.
 4. **Configure Tools**: Initialize Bun, Prettier, and ESLint if missing.
 5. **Activate Skills**: Verify the correct `/elite-*`, `/themes`, and `/agent-boost` skills are active.
@@ -23,4 +23,4 @@ Use `/setup` to instantly configure a new workspace or project for elite develop
 ## Commands
 - `/setup-init`: Performs a full workspace audit and configuration.
 - `/setup-stack`: Adds stack-specific rules to an existing project.
-- `/setup-all`: Installs workspace rules, workflows, theme guidance, and stack detection.
+- `/setup-all`: Installs workspace rules, workflows, theme and icon guidance, and stack detection.

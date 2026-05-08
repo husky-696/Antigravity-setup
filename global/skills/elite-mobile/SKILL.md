@@ -1,5 +1,5 @@
 ---
-name: 📱 elite-mobile
+name: 📲 elite-mobile
 description: Premium Expo & React Native development with fluid animations and modern architecture.
 category: mobile
 ---

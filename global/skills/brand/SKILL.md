@@ -1,5 +1,5 @@
 ---
-name: 🎨 brand
+name: 🏷️ brand
 description: Instant identity generation including logos, palettes, and marketing copy.
 category: design
 ---

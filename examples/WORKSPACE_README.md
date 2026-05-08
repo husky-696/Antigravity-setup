@@ -29,7 +29,7 @@ cp /path/to/Antigravity-setup/examples/workspace/workflows/* .agent/workflows/
 | `code-quality.md` | Code style, naming, and structure conventions |
 | `safety-guardrails.md` | Protected files, destructive action prevention |
 | `progress-reporting.md` | Status updates, forward momentum, anti-stuck |
-| `premium-themes.md` | Semantic theme tokens, contrast, visual depth, and motion guidance |
+| `premium-themes.md` | Semantic theme tokens, better icons, contrast, visual depth, and motion guidance |
 
 ### Workflows (`.agent/workflows/`)
 | File | Trigger | Purpose |
@@ -39,7 +39,7 @@ cp /path/to/Antigravity-setup/examples/workspace/workflows/* .agent/workflows/
 | `fix-bug.md` | `/fix-bug` | Systematic debugging |
 | `refactor.md` | `/refactor` | Safe code transformation |
 | `setup-project.md` | `/setup-project` | New project scaffolding |
-| `theme.md` | `/theme` | Premium visual theme upgrade |
+| `theme.md` | `/theme` | Premium visual theme and icon upgrade |
 
 ## Customization
 
@@ -48,7 +48,7 @@ These files are **yours to edit**. Common customizations:
 - **Remove rules** that don't apply to your stack
 - **Add stack rules**: `cp stacks/typescript-node/rules.md .agent/rules/stack.md`
 - **Use `/agent-boost`** to create team-specific workflows with inputs, steps, and exit criteria
-- **Use `/theme`** when a UI needs a more polished visual system
+- **Use `/theme`** when a UI needs a more polished visual and icon system
 - **Adjust token rules** based on your usage patterns
 
 ## Tips

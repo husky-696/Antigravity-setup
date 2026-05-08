@@ -26,7 +26,7 @@ cd Antigravity-setup
 ./setup.sh
 ```
 
-Auto-detects `bun` vs `npm`. Configures global IDE rules, skills, slash-command workflows, stack rules, and optional premium theme guidance in one shot.
+Auto-detects `bun` vs `npm`. Configures global IDE rules, skills, slash-command workflows, stack rules, and optional premium theme and icon guidance in one shot.
 
 **Pull 1,400+ community playbooks from [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills):**
 
@@ -83,6 +83,7 @@ Antigravity-setup/
 ├── examples/workspace/              # Per-project templates
 │   ├── rules/                       # Drop into .agent/rules/
 │   │   ├── code-quality.md
+│   │   ├── premium-themes.md
 │   │   ├── safety-guardrails.md
 │   │   └── progress-reporting.md
 │   └── workflows/                   # Drop into .agent/workflows/
@@ -112,7 +113,7 @@ Antigravity-setup/
 | Core file protection | Blocklist for `package.json`, lock files, CI config unless explicitly unlocked |
 | Package manager | `bun` preferred; fallback to `npm` if `bun` not found |
 | Slash workflows | Project-local `.agent/workflows` for `/build-feature`, `/fix-bug`, `/theme`, `/agent-boost`, and more |
-| Visual polish | Optional premium theme rule pack with semantic tokens, contrast, depth, and motion guidance |
+| Visual polish | Optional premium theme and icon rule pack with semantic tokens, contrast, depth, motion, and icon-family guidance |
 
 ---
 
@@ -120,22 +121,22 @@ Antigravity-setup/
 
 | Trigger | Skill | Stack |
 | :--- | :--- | :--- |
-| `🚀 /elite-web` | Next.js App Router, Tailwind v4, Framer Motion | Web |
-| `📱 /elite-mobile` | Expo SDK 51+, Reanimated, Lucide, native layouts | Mobile |
-| `⚡ /elite-backend` | Supabase, Drizzle ORM, Auth, RLS modeling | Backend |
-| `🎨 /elite-design` | Typography, motion, premium UI/UX patterns | Design |
-| `🎨 /brand` | Logos, palettes, marketing copy | Design |
-| `🎭 /themes` | Premium theme systems, dark/light modes, visual polish | Design |
+| `🕸️ /elite-web` | Next.js App Router, Tailwind v4, Framer Motion | Web |
+| `📲 /elite-mobile` | Expo SDK 51+, Reanimated, Lucide, native layouts | Mobile |
+| `🗄️ /elite-backend` | Supabase, Drizzle ORM, Auth, RLS modeling | Backend |
+| `💅 /elite-design` | Typography, motion, premium UI/UX patterns | Design |
+| `🏷️ /brand` | Logos, palettes, marketing copy | Design |
+| `🌈 /themes` | Premium theme systems, dark/light modes, better icons, visual polish | Design |
 | `🚢 /elite-ship` | Vercel, EAS Build, repo hygiene | DevOps |
 | `🌿 /git` | Conventional Commits, branch sync | DevOps |
 | `🧹 /clean` | Project auditing, dead-code pruning | Utility |
-| `🔍 /debug` | Isolate → Trace → Analyze protocol | Quality |
-| `⚙️ /setup` | Workspace init, environment config | Core |
-| `💎 /elite-code` | Refactoring, high-performance patterns | Core |
+| `🐞 /debug` | Isolate → Trace → Analyze protocol | Quality |
+| `🧭 /setup` | Workspace init, environment config | Core |
+| `🧩 /elite-code` | Refactoring, high-performance patterns | Core |
 | `🧠 /agent-boost` | Improve rules, workflows, validation loops, and slash commands | Core |
 | `✨ /improve` | Systematic design + functionality evolution | Core |
-| `⚡ /profile` | Performance auditing, speed optimization | Quality |
-| `🔐 /security` | Biometrics, encryption, RLS hardening | Quality |
+| `📈 /profile` | Performance auditing, speed optimization | Quality |
+| `🛡️ /security` | Biometrics, encryption, RLS hardening | Quality |
 
 Full descriptions → [CATALOG.md](./CATALOG.md)
 
@@ -168,8 +169,8 @@ Full descriptions → [CATALOG.md](./CATALOG.md)
 ### Make the UI feel premium
 
 ```
-/theme         → apply a named visual direction
-/themes        → generate tokens, dark/light modes, and polish rules
+/theme         → apply a named visual direction and icon system
+/themes        → generate tokens, dark/light modes, better icons, and polish rules
 /elite-design  → review typography, spacing, and motion
 ```
 

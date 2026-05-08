@@ -1,5 +1,5 @@
 ---
-name: 🔍 debug
+name: 🐞 debug
 description: Systematic root-cause analysis and resolution for complex bugs and crashes.
 category: core
 ---

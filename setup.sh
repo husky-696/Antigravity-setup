@@ -38,8 +38,8 @@ Options:
   --fetch-awesome              Pull curated community skills into global/skills before install
   --with-workspace [path]      Install .agent rules and slash-command workflows into a project
   --with-stack <name>          Add stack rules to the workspace (typescript-node, react-nextjs, expo-react-native, python-fastapi)
-  --with-themes                Add premium theme rules to the workspace (included in --all)
-  --all [path]                 Install global config plus workspace workflows, themes, and auto stack detection
+  --with-themes                Add premium theme and icon rules to the workspace (included in --all)
+  --all [path]                 Install global config plus workspace workflows, themes/icons, and auto stack detection
   --no-backup                  Replace existing installed files without creating timestamped backups
   -h, --help                   Show this help message
 
@@ -160,7 +160,7 @@ detect_stack() {
 
 echo ""
 echo -e "${B}${C}  🚀 Antigravity Setup Installer${N}"
-echo -e "${D}  Rules • skills • slash workflows • premium themes${N}"
+echo -e "${D}  Rules • skills • slash workflows • themes & icons${N}"
 echo -e "${D}  ───────────────────────────────────────────────${N}"
 
 # ── Pre-flight ───────────────────────────────────────────────────────────────
@@ -207,8 +207,13 @@ COUNT=0
 for d in "$DIR/global/skills"/*/; do
     [ -d "$d" ] || continue
     name=$(basename "$d")
+    display_name="$name"
+    if [ -f "$d/SKILL.md" ]; then
+        display_name="$(sed -n 's/^name: //p' "$d/SKILL.md" | head -n 1)"
+        [ -n "$display_name" ] || display_name="$name"
+    fi
     copy_dir "${d%/}" "$SKILLS"
-    ok "Skill: ${B}$name${N}"
+    ok "Skill: ${B}$display_name${N}"
     COUNT=$((COUNT + 1))
 done
 info "${COUNT} skills installed to ${D}${SKILLS}${N}"
@@ -269,10 +274,10 @@ if [ "$INSTALL_WORKSPACE" = true ]; then
 fi
 echo ""
 echo -e "  ${B}Best next commands:${N}"
-echo -e "    ${D}/setup${N}          Audit workspace and activate the right stack"
-echo -e "    ${D}/agent-boost${N}    Improve rules, workflows, and automation"
-echo -e "    ${D}/theme${N}          Generate or upgrade a premium visual theme"
-echo -e "    ${D}/debug${N}          Isolate → trace → fix bugs"
+echo -e "    🧭 ${D}/setup${N}          Audit workspace and activate the right stack"
+echo -e "    🧠 ${D}/agent-boost${N}    Improve rules, workflows, and automation"
+echo -e "    🌈 ${D}/theme${N}          Upgrade theme, tokens, and icons"
+echo -e "    🐞 ${D}/debug${N}          Isolate → trace → fix bugs"
 echo ""
 echo -e "  ${B}Installer shortcuts:${N}"
 echo -e "    ${D}./setup.sh --all [path]${N}                         Full workspace upgrade"

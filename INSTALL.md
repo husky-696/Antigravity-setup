@@ -4,7 +4,7 @@
 
 ## ⚡ Super Easy Install (Recommended)
 
-Run our automatic installer from your terminal. It detects your environment, prefers `bun` for speed, and installs global rules, skills, slash workflows, stack rules, and optional premium theme guidance.
+Run our automatic installer from your terminal. It detects your environment, prefers `bun` for speed, and installs global rules, skills, slash workflows, stack rules, and optional premium theme and icon guidance.
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/Antigravity-setup.git
@@ -77,4 +77,4 @@ After installation, open Antigravity IDE and ask:
 1. **"What global rules do you have?"** — Should describe your GEMINI.md contents.
 2. **"What skills are available?"** — Should list all installed skills by name (including the new curated set).
 3. **"Use /agent-boost to audit this workspace"** — Confirms workflow/capability guidance is available.
-4. **"Use /theme to make this UI feel premium"** — Confirms theme workflow guidance is available.
+4. **"Use /theme to make this UI feel premium with better icons"** — Confirms theme workflow guidance is available.
